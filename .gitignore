@@ -29,3 +29,6 @@
 /node_modules
 /coverage
 .DS_Store
+
+# Ignore credential
+/config/master.key
