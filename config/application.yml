@@ -1,0 +1,18 @@
+default: &default
+  DB_HOST: "localhost"
+  DB_PORT: "5432"
+  USERNAME: "postgres"
+  MAILER_DEFAULT_HOST: "localhost"
+  MAILER_DEFAULT_PORT: "3000"
+  MAILER_SENDER: "Test <noreply@nimbl3.co>"
+
+development:
+  <<: *default
+  DB_NAME: "filestack-rails-storage_development"
+  SECRET_KEY_BASE: "#{secret_key_base}"
+
+test:
+  <<: *default
+  DB_NAME: "filestack-rails-storage_test"
+  TEST_RETRY: "0"
+  SECRET_KEY_BASE: "#{secret_key_base}"
