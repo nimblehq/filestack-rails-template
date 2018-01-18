@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  db:
+    image: postgres:10.1
+    container_name: filestack-rails-storage_db
+    environment:
+      - POSTGRES_DB=filestack-rails-storage_development
+    ports:
+      - "5432"
