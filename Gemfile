@@ -3,7 +3,7 @@ ruby '2.5.0'
 
 # Backend
 gem 'rails', '~> 5.2.0.beta2' # Latest stable
-gem 'pg' # Use Postgresql as database
+gem 'pg', '~> 0.21' # Use Postgresql as database
 gem 'puma' # Use Puma as the app server
 gem 'active_model_serializers' # ActiveModel::Serializer implementation and Rails hooks
 gem 'carrierwave' # Classier solution for file uploads for Rails
@@ -15,6 +15,7 @@ gem 'paranoia', '2.3.1' # Paranoia is a re-implementation of acts_as_paranoid fo
 gem 'ffaker' # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'fabrication' # Fabrication generates objects in Ruby. Fabricators are schematics for your objects, and can be created as needed anywhere in your app or specs.
 gem 'sidekiq' # background processing for Ruby
+gem 'bootsnap', require: false # Boot large Ruby/Rails apps faster
 
 # Admin
 gem 'rails_admin'
