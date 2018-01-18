@@ -25,10 +25,14 @@ gem 'devise' # Authentication solution for Rails with Warden
 gem 'pundit' # Minimal authorization through OO design and pure Ruby classes
 
 # Assets
+gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'jquery-rails' # Use jquery as the JavaScript library
 gem 'font-awesome-sass' # Font-Awesome Sass gem for use in Ruby/Rails projects
 gem 'sass-rails' # SASS
 gem 'uglifier'
+
+# Views
+gem 'slim' # Slim is a template language whose goal is reduce the syntax to the essential parts without becoming cryptic
 
 group :development do
   gem 'better_errors' # Better error page for Rails and other Rack apps
