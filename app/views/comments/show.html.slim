@@ -1,7 +1,14 @@
-= link_to 'Home', root_path
+.comment-layout
+  nav aria-label='breadcrumb'
+    ol class='breadcrumb'
+      li class='breadcrumb-item'
+        = link_to 'Home', root_path
+      li class='breadcrumb-item'
+        = link_to 'Comment', new_comment_path
+      li class='breadcrumb-item active'
+      | Gallery
 
-h1 = @comment.content
-br
-br
-- @comment.images.each do |image|
-  = image_tag image
+  .card-columns
+    - @comment.images.each do |image|
+      .card
+        = image_tag image, class: 'card-img-top'

@@ -79,9 +79,9 @@ GEM
       debug_inspector (>= 0.0.1)
     bootsnap (1.1.8)
       msgpack (~> 1.0)
-    bootstrap (4.0.0.beta3)
+    bootstrap (4.0.0)
       autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.3, < 2)
+      popper_js (>= 1.12.9, < 2)
       sass (>= 3.5.2)
     brakeman (4.1.1)
     builder (3.2.3)
@@ -528,7 +528,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootsnap
-  bootstrap (~> 4.0.0.beta3)
+  bootstrap (~> 4.0.0)
   brakeman
   bullet
   capybara
