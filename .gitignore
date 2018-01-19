@@ -30,5 +30,8 @@
 /coverage
 .DS_Store
 
-# Ignore credential
+# Ignore storage
+/storage/*
+
+# Ignore master key for decrypting credentials and more.
 /config/master.key
