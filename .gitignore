@@ -29,3 +29,9 @@
 /node_modules
 /coverage
 .DS_Store
+
+# Ignore storage
+/storage/*
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key

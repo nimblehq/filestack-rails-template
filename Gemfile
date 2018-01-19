@@ -6,8 +6,7 @@ gem 'rails', '~> 5.2.0.beta2' # Latest stable
 gem 'pg', '~> 0.21' # Use Postgresql as database
 gem 'puma' # Use Puma as the app server
 gem 'active_model_serializers' # ActiveModel::Serializer implementation and Rails hooks
-gem 'carrierwave' # Classier solution for file uploads for Rails
-gem 'carrierwave-aws' # Use the officially supported AWS-SDK library for S3 storage
+gem 'aws-sdk-s3', require: false # Official AWS Ruby gem for Amazon Simple Storage Service (Amazon S3)
 gem 'mini_magick' # A ruby wrapper for ImageMagick or GraphicsMagick command line
 gem 'kaminari' # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4
 gem 'chronic' # Chronic is a pure Ruby natural language date parser.
@@ -86,5 +85,5 @@ group :test do
 end
 
 group :production do
-  gem 'rack-timeout'           # Rack middleware which aborts requests that have been running for longer than a specified timeout.
+  gem 'rack-timeout' # Rack middleware which aborts requests that have been running for longer than a specified timeout.
 end
