@@ -36,6 +36,9 @@ module FilestackRailsStorage
     # Prefix the queue name of all jobs with Rails ENV
     config.active_job.queue_name_prefix = Rails.env
 
+    # Filestack
+    config.filestack_rails.api_key = ENV['FILESTACK_API_KEY']
+    config.filestack_rails.client_name = 'filestack_me'
 
     # Don't generate system test files.
     config.generators.system_tests = nil

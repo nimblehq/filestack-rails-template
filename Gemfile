@@ -29,6 +29,7 @@ gem 'jquery-rails' # Use jquery as the JavaScript library
 gem 'font-awesome-sass' # Font-Awesome Sass gem for use in Ruby/Rails projects
 gem 'sass-rails' # SASS
 gem 'uglifier'
+gem 'filestack-rails', require: 'filestack-rails'
 
 # Views
 gem 'slim' # Slim is a template language whose goal is reduce the syntax to the essential parts without becoming cryptic
