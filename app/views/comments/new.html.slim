@@ -14,5 +14,5 @@
     .form-group
       = form.label(:images)
       .col-sm-8
-      = form.file_field :images, multiple: true, class: 'form-control-file'
+        = form.file_field :images, multiple: true, direct_upload: true, class: 'form-control-file'
     = form.submit class: 'btn btn-primary btn-block'
