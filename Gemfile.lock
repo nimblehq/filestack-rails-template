@@ -241,6 +241,7 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    normalize-rails (4.1.1)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -547,6 +548,7 @@ DEPENDENCIES
   letter_opener
   listen (= 3.1.5)
   mini_magick
+  normalize-rails
   paranoia (= 2.3.1)
   pg (~> 0.21)
   pronto

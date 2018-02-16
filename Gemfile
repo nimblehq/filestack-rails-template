@@ -28,6 +28,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails' # Use jquery as the JavaScript library
 gem 'font-awesome-sass' # Font-Awesome Sass gem for use in Ruby/Rails projects
 gem 'sass-rails' # SASS
+gem 'normalize-rails' # Integrates normalize.css with the rails asset pipeline
 gem 'uglifier'
 
 # Views

@@ -1,4 +1,10 @@
+@import 'normalize-rails';
+
+@import './variables';
+
 @import './mixins/*';
+
+@import './base/*';
 
 @import "bootstrap";
 

@@ -1,0 +1,85 @@
+//
+// Headings
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: 600;
+  line-height: 1.4375;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  font-weight: 600;
+  line-height: 1.43;
+}
+
+h3 {
+  font-size: $font-size-h3;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: $font-size-h4;
+  font-weight: 500;
+  line-height: 1.67;
+}
+
+h5 {
+  font-size: $font-size-h5;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+h6 {
+  font-size: $font-size-h6;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+//
+// Paragraph
+//
+
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.86;
+  // scss-lint:disable ColorVariable
+  color: #000;
+  word-wrap: break-word;
+}
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid map-get($brand-gray, 'light');
+}
+
+//
+// Emphasis
+//
+
+mark {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: map-get($brand-gray, 'dark');
+  background: none;
+}

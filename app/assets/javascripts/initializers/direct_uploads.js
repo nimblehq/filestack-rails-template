@@ -1,7 +1,7 @@
-const DEFAULT_SELECTOR = '[data-form="direct-upload"]';
+const DUPLOAD_DEFAULT_SELECTOR = '[data-form="direct-uploads"]';
 
-const DEFAULT_OPTIONS = {
-  selector: DEFAULT_SELECTOR
+const DUPLOAD_DEFAULT_OPTIONS = {
+  selector: DUPLOAD_DEFAULT_SELECTOR
 };
 
 class DirectUploads {
@@ -47,6 +47,6 @@ class DirectUploads {
   }
 }
 
-document.querySelectorAll(DEFAULT_OPTIONS['selector']).forEach(directUploadForm => {
+document.querySelectorAll(DUPLOAD_DEFAULT_OPTIONS['selector']).forEach(directUploadForm => {
   new DirectUploads(directUploadForm);
 });

@@ -1,13 +1,13 @@
 // Default class names for modal states
-const CLASS_NAME = {
+const MODAL_CLASS_NAME = {
   MODAL: 'modal',
   OVERLAY: 'modal__overlay',
   SHOW: 'modal--show',
   OPEN: 'modal__open'
 };
 
-export const DEFAULT_OPTIONS = {
-  className: CLASS_NAME
+const MODAL_DEFAULT_OPTIONS = {
+  className: MODAL_CLASS_NAME
 };
 
 class Modal {
@@ -15,15 +15,15 @@ class Modal {
    * Initializer
    *
    * @param {Element} elementRef - HTML node, to add modal properties on.
-   * @param {Object} options - Configuration options, defaults to `DEFAULT_OPTIONS`.
+   * @param {Object} options - Configuration options, defaults to `MODAL_DEFAULT_OPTIONS`.
    * */
-  constructor(elementRef, options = DEFAULT_OPTIONS) {
+  constructor(elementRef, options = MODAL_DEFAULT_OPTIONS) {
     // Initialise attributes
 
     // Root modal container
     this.elementRef = elementRef;
     // Object to hold all the className of the modal
-    this.className = options.className || CLASS_NAME;
+    this.className = options.className || MODAL_CLASS_NAME;
     // Button to show the modal
     this.showButton = this._getOpenButton();
     // Button to close the modal
@@ -131,6 +131,6 @@ class Modal {
   }
 }
 
-document.querySelectorAll(`.${DEFAULT_OPTIONS['className']['MODAL']}`).forEach(modal => {
+document.querySelectorAll(`.${MODAL_DEFAULT_OPTIONS['className']['MODAL']}`).forEach(modal => {
   new Modal(modal);
 });
