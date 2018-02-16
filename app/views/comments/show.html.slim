@@ -11,4 +11,8 @@
   .card-columns
     - @comment.images.each do |image|
       .card
-        = image_tag image, class: 'card-img-top'
+        = image_tag image.variant(resize: '200x200'), class: 'card-img-top'
+        .card-body
+          p.card-text
+            = @comment.content
+          = link_to 'Download', rails_blob_path(image, disposition: 'attachment'), class: 'btn btn-primary'
