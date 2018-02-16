@@ -1,0 +1,33 @@
+// Transition Mixins
+
+// This mixin will add passed down transitions.
+// It will further parse the transition properties and add `will-change` css property too.
+
+@mixin transition($transition...) {
+  transition: $transition;
+
+  // Variable to hold transition properties
+  $transition-props: null;
+
+  // Flag to indicate whether to add `will-change` property
+  $add-will-change: true;
+
+  @each $transition-prop in $transition {
+    $prop: nth($transition-prop, 1);
+
+    // DO NOT add `will-change` property if one of the transition properties is `all`
+    @if ($prop == 'all') {
+      $add-will-change: false;
+    }
+
+    @if ($transition-props) {
+      $transition-props: #{$transition-props}, nth($transition-prop, 1);
+    } @else {
+      $transition-props: nth($transition-prop, 1);
+    }
+  }
+
+  @if ($transition-props and $add-will-change) {
+    will-change: $transition-props;
+  }
+}
