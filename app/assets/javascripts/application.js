@@ -14,4 +14,6 @@
 //= require popper
 //= require bootstrap
 //= require activestorage
-//= require_tree ./initializers
+
+//= require ./initializers/direct_uploads
+//= require ./initializers/buri_uploads

@@ -1,9 +1,9 @@
 // Default class names for modal states
 const MODAL_CLASS_NAME = {
-  MODAL: 'modal',
-  OVERLAY: 'modal__overlay',
-  SHOW: 'modal--show',
-  OPEN: 'modal__open'
+  MODAL: 'neat-modal',
+  OVERLAY: 'neat-modal__overlay',
+  SHOW: 'neat-modal--show',
+  OPEN: 'neat-modal__open'
 };
 
 const MODAL_DEFAULT_OPTIONS = {
@@ -110,7 +110,7 @@ class Modal {
    * @return {Element} - HTML node that closes the modal.
    * */
   _getCloseButton() {
-    return this.elementRef.querySelectorAll("[data-hide='modal']");
+    return this.elementRef.querySelectorAll("[data-hide='neat-modal']");
   }
 
   /**

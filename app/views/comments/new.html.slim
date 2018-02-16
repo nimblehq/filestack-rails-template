@@ -6,7 +6,7 @@
       li class='breadcrumb-item active'
       | Comment
 
-  = form_with model: @comment, data: { form: 'direct-upload' }, local: true do |form|
+  = form_with model: @comment, data: { form: 'direct-uploads', ui: 'buri-uploads' }, local: true do |form|
     .form-group
       = form.label(:content)
       .col-sm-8
