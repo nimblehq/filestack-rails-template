@@ -1,0 +1,81 @@
+.fsp-image-grid {
+  margin-bottom: 3.75rem;
+}
+
+.fsp-drop-area-container,
+.fsp-image-search,
+.fsp-image-preview {
+  &.fsp-area--hide {
+    display: none;
+  }
+}
+
+.fsp-image-preview {
+  .fsp-image-grid {
+    @include transition(
+        opacity 0.3s ease-in-out
+    );
+
+    margin-bottom: 0;
+    opacity: 0;
+
+    //.fsp-image-grid__cell:before {
+    //  content: " ";
+    //  width: 100%;
+    //  height: 100%;
+    //  background: rgba(255,255,255,0.65);
+    //  z-index: 1;
+    //  position: absolute;
+    //  top: 0;
+    //  right: 0;
+    //}
+
+    .fsp-overlay-grid__cell {
+      @include transition(
+          width 0.3s ease-in-out
+      );
+
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.65);
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &.fsp-image-grid--active {
+      opacity: 1;
+    }
+  }
+}
+
+.fsp-image-grid__cell {
+  @include transition(
+    opacity 0.3s ease-in-out
+  );
+
+  cursor: default;
+  opacity: 0;
+
+  &.fsp-image-grid--active {
+    opacity: 1;
+  }
+}
+
+.fsp-action-content {
+  @include transition(
+    bottom .3s ease-in-out
+  );
+
+  position: absolute;
+  width: 100%;
+  bottom: -3.75rem;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #dddddd;
+
+  &.fsp-action--active {
+    bottom: 0;
+  }
+}
