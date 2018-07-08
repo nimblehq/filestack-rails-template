@@ -1,0 +1,18 @@
+.comment-layout
+  nav aria-label='breadcrumb'
+    ol class='breadcrumb'
+      li class='breadcrumb-item'
+        = link_to 'Home', root_path
+      li class='breadcrumb-item'
+        = link_to 'Comment', new_comment_path
+      li class='breadcrumb-item active'
+      | Gallery
+
+  .card-columns
+    - @comment.images.each do |image|
+      .card
+        = image_tag image.variant(resize: '200x200'), class: 'card-img-top'
+        .card-body
+          p.card-text
+            = @comment.content
+          = link_to 'Download', rails_blob_path(image, disposition: 'attachment'), class: 'btn btn-primary'

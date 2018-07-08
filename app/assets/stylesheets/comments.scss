@@ -1,0 +1,15 @@
+.comment-layout {
+  //@include inline-flex();
+  //@include align-items(center);
+  //@include justify-content(center);
+  margin-top: 1rem;
+
+  height: 100vh;
+  width: 100%;
+
+  form {
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+}
